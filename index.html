@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validus Greens</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Open+Sans:wght@300;400&display=swap');
+        
+        body {
+            background-color: #fafdf9;
+        }
+        
+        .crimson {
+            font-family: 'Crimson Text', serif;
+        }
+        
+        .opensans {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .text-sage {
+            color: #687F5F;
+        }
+        
+        .bg-sage {
+            background-color: #687F5F;
+        }
+        
+        .bg-light-sage {
+            background-color: #F3F7F0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="py-6 bg-white/90 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <a href="#" class="crimson text-2xl text-sage">Validus Greens</a>
+                <div class="hidden md:flex space-x-12 opensans text-sage">
+                    <a href="#about" class="hover:text-green-800 transition-colors">About</a>
+                    <a href="#garden" class="hover:text-green-800 transition-colors">Our Garden</a>
+                    <a href="#visit" class="hover:text-green-800 transition-colors">Visit</a>
+                    <a href="#contact" class="hover:text-green-800 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center space-y-6">
+                    <h1 class="crimson text-4xl md:text-5xl text-sage">A Haven of Natural Serenity</h1>
+                    <p class="opensans text-lg text-gray-600 leading-relaxed">
+                        Welcome to Validus Greens, where we nurture over 100 plant species in harmony. 
+                        Each leaf tells a story of patience, care, and natural beauty.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Image -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <img src="assests/greens_00.webp" alt="Validus Greens Garden" class="w-full rounded-lg shadow-sm"/>
+            </div>
+        </section>
+
+        <!-- Garden Sections -->
+        <section id="garden" class="py-20 bg-light-sage">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="/api/placeholder/400/300" alt="Indoor Garden" class="w-full rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Indoor Sanctuary</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            A carefully curated collection of indoor plants that bring peace and vitality to living spaces.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="/api/placeholder/400/300" alt="Herb Garden" class="w-full rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Meditation Garden</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            A peaceful corner where nature's gentle presence invites reflection and tranquility.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="/api/placeholder/400/300" alt="Water Garden" class="w-full rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Water Elements</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            The soothing sound of water complements our aquatic and semi-aquatic plant collection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-20 bg-light-sage">
+            <div class="container mx-auto px-6">
+                <h2 class="crimson text-3xl text-sage mb-12 text-center">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Plant Consultation -->
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="assests/greens_02.webp" alt="Plant Consultation" class="w-full h-48 object-cover rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Plant Consultation</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            Expert advice on plant selection, care routines, and creating the perfect environment for your green companions. We help you understand your plants' needs.
+                        </p>
+                    </div>
+
+                    <!-- Garden Design -->
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="assests/greens_03.webp" alt="Garden Design" class="w-full h-48 object-cover rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Garden Design</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            Custom garden design services to transform your space into a peaceful haven. We create harmonious layouts that bring tranquility to your environment.
+                        </p>
+                    </div>
+
+                    <!-- Plant Care Workshops -->
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="assests/greens_04.webp" alt="Workshops" class="w-full h-48 object-cover rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Plant Care Workshops</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            Join our educational workshops to learn proper plant care techniques, propagation methods, and maintenance tips from experienced gardeners.
+                        </p>
+                    </div>
+
+                    <!-- Plant Health Care -->
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="assests/greens_05.webp" alt="Plant Health" class="w-full h-48 object-cover rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Plant Health Care</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            Diagnostic and treatment services for plant health issues. We help identify problems and provide solutions to keep your plants thriving.
+                        </p>
+                    </div>
+
+                    <!-- Maintenance Services -->
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="assests/greens_06.webp" alt="Maintenance" class="w-full h-48 object-cover rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Maintenance Services</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            Regular maintenance programs to keep your garden beautiful year-round. Including pruning, fertilizing, and seasonal care routines.
+                        </p>
+                    </div>
+
+                    <!-- Special Events -->
+                    <div class="bg-white p-8 rounded-lg">
+                        <img src="assests/greens_07.webp" alt="Events" class="w-full h-48 object-cover rounded-lg mb-6"/>
+                        <h3 class="crimson text-2xl text-sage mb-4">Special Events</h3>
+                        <p class="opensans text-gray-600 leading-relaxed">
+                            Garden tours, meditation sessions, and plant sale events. Join our community gatherings in our serene garden space.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Note -->
+                <div class="mt-12 text-center max-w-2xl mx-auto">
+                    <p class="opensans text-gray-600">
+                        All our services are provided with dedication to creating and maintaining peaceful, sustainable green spaces. 
+                        Contact us for customized solutions for your garden needs.
+                    </p>
+                    <a href="#contact" class="inline-block mt-6 bg-sage text-white opensans px-8 py-3 rounded-lg hover:bg-opacity-90 transition-colors">
+                        Inquire About Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="crimson text-3xl text-sage mb-8 text-center">Our Story</h2>
+                    <p class="opensans text-gray-600 leading-relaxed mb-6">
+                        Validus Greens began as a simple dream to create a space where nature's beauty could flourish undisturbed. 
+                        What started with a few carefully tended plants has grown into a sanctuary of over 100 species, each contributing 
+                        to the peaceful atmosphere we've cultivated.
+                    </p>
+                    <p class="opensans text-gray-600 leading-relaxed">
+                        Our garden is more than just a collection of plants - it's a living reminder of the calm and beauty that nature 
+                        brings to our lives. We invite you to experience this tranquility firsthand.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+ <!-- Contact -->
+ <section id="contact" class="py-20 bg-light-sage">
+    <div class="container mx-auto px-6">
+        <div class="max-w-xl mx-auto">
+            <h2 class="crimson text-3xl text-sage mb-8 text-center">Connect With Us</h2>
+            
+            <!-- Direct Contact Info -->
+            <div class="bg-white rounded-lg p-8 mb-8 text-center">
+                <h3 class="crimson text-xl text-sage mb-4">Email Us Directly</h3>
+                <p class="opensans text-gray-600 mb-4">Feel free to reach out to us at:</p>
+                <a href="mailto:validusgreens@gmail.com" class="text-sage hover:text-green-800 opensans font-medium">
+                    validusgreens@gmail.com
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-lg p-8">
+                <h3 class="crimson text-xl text-sage mb-6">Contact Form</h3>
+                <form class="space-y-6" action="mailto:validusgreens@gmail.com" method="post" enctype="text/plain">
+                    <div>
+                        <label class="block opensans text-gray-600 mb-2">Name</label>
+                        <input type="text" name="name" class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-sage">
+                    </div>
+                    <div>
+                        <label class="block opensans text-gray-600 mb-2">Email</label>
+                        <input type="email" name="email" class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-sage">
+                    </div>
+                    <div>
+                        <label class="block opensans text-gray-600 mb-2">Message</label>
+                        <textarea name="message" rows="4" class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-sage"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-sage text-white opensans py-3 rounded-lg hover:bg-opacity-90 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+                <p class="mt-4 text-sm text-gray-500 opensans text-center">
+                    Or simply email us directly at validusgreens@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="py-8 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="opensans text-gray-600">&copy; 2024 Validus Greens. A space for peace and natural beauty.</p>
+        </div>
+    </footer>
+</body>
+</html>
