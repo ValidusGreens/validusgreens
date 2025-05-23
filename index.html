@@ -11,7 +11,43 @@
         body {
             background-color: #fafdf9;
         }
-        
+         .gallery-section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-family: 'Crimson Text', serif;
+      color: #6b8c64;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .photo-wall {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .photo-wall img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-wall img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 600px) {
+      .gallery-title {
+        font-size: 2rem;
+      }
         .crimson {
             font-family: 'Crimson Text', serif;
         }
@@ -80,6 +116,20 @@
         </section>
 
         <!-- Garden Sections -->
+        <section class="gallery-section">
+    <h2 class="gallery-title">Garden Photo Wall</h2>
+    <div class="photo-wall">
+      <img src="https://drive.google.com/file/d/1tWiQbT8foTCjyuSfT2EmxMaBIoaNFZZ5/view?usp=sharing" alt="Garden 1" />
+      <img src="https://drive.google.com/drive/u/3/folders/1r6yhaTF-JPr2r2F6Cu0_tEaiVTUKGusd" alt="Garden 2" />
+      <img src="https://drive.google.com/drive/u/3/folders/1r6yhaTF-JPr2r2F6Cu0_tEaiVTUKGusd" alt="Garden 3" />
+      <img src="IMAGE_LINK_4_HERE" alt="Garden 4" />
+      <img src="IMAGE_LINK_5_HERE" alt="Garden 5" />
+      <img src="IMAGE_LINK_6_HERE" alt="Garden 6" />
+      <img src="IMAGE_LINK_7_HERE" alt="Garden 7" />
+      <img src="IMAGE_LINK_8_HERE" alt="Garden 8" />
+      <!-- Add more <img> tags as needed -->
+    </div>
+  </section>
         <section id="garden" class="py-20 bg-light-sage">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
